@@ -4,6 +4,8 @@ const { request } = require("http");
 var logger = fs.createWriteStream('log.txt', {flags: 'a'})
 const log = console.log;
 const checkNumber = require("./utils/checkNumber");
+const checkNumberBulk = require("./utils/checkNumberBulk");
+
 const Numbers = [989123336666,989120526684];
 (async () => {
 	if (process.argv.length < 3) {
